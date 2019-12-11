@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">真好听</string>
-
-    <color name="tab_pressed">#33ffffff</color>
+    <string name="app_name">Music</string>
 </resources>

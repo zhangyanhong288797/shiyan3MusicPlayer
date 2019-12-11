@@ -1,22 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main_bg"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/coloBGNormal"
-    android:fitsSystemWindows="true">
+    android:background="@drawable/c30"
+   >
 
-    <com.example.musicplayer.view.SlidingMenu
-        android:id="@+id/sm"
+    <TextView
+        android:id="@+id/main_textview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <!-- 左侧菜单 -->
-
-        <include layout="@layout/left" />
-
-        <!-- 右侧内容 -->
-
-        <include layout="@layout/content" />
-    </com.example.musicplayer.view.SlidingMenu>
-
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="我的音乐" />
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_below="@+id/main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
